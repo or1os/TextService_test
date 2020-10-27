@@ -16,4 +16,4 @@ class Index(FormView):
         new_text = text.replace(search, replace)
 
         ctxt = self.get_context_data(new_text=new_text, form=form)
-        return self.render_to_respone(ctxt)
+        return self.render_to_response(ctxt)
